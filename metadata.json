@@ -1,0 +1,6 @@
+{
+  "name": "Power Circuit Study — 전기기사 전력공학",
+  "description": "전기기사 전력공학 필기 기출문제 풀이 및 오답노트 학습 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

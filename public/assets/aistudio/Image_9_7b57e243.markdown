@@ -1,0 +1,215 @@
+---
+name: Power Circuit Study
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#cbdbf5'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e5eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d3e4fe'
+  on-surface: '#0b1c30'
+  on-surface-variant: '#434655'
+  inverse-surface: '#213145'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#747686'
+  outline-variant: '#c4c5d7'
+  surface-tint: '#2151da'
+  primary: '#0037b0'
+  on-primary: '#ffffff'
+  primary-container: '#1d4ed8'
+  on-primary-container: '#cad3ff'
+  inverse-primary: '#b7c4ff'
+  secondary: '#904d00'
+  on-secondary: '#ffffff'
+  secondary-container: '#fe932c'
+  on-secondary-container: '#663500'
+  tertiary: '#004f35'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#006948'
+  on-tertiary-container: '#76eab6'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dce1ff'
+  primary-fixed-dim: '#b7c4ff'
+  on-primary-fixed: '#001551'
+  on-primary-fixed-variant: '#0039b5'
+  secondary-fixed: '#ffdcc3'
+  secondary-fixed-dim: '#ffb77d'
+  on-secondary-fixed: '#2f1500'
+  on-secondary-fixed-variant: '#6e3900'
+  tertiary-fixed: '#85f8c4'
+  tertiary-fixed-dim: '#68dba9'
+  on-tertiary-fixed: '#002114'
+  on-tertiary-fixed-variant: '#005137'
+  background: '#f8f9ff'
+  on-background: '#0b1c30'
+  surface-variant: '#d3e4fe'
+typography:
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 26px
+    fontWeight: '700'
+    lineHeight: 36px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 17px
+    fontWeight: '500'
+    lineHeight: 28px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: 18px
+    letterSpacing: 0.02em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system targets Korean engineering students preparing for the National Technical Qualification Examination in Electrical Engineering (전기기사 - 전력공학). The experience is strictly optimized for handheld, single-thumb portrait interactions during commutes, meals, and quick review intervals.
+
+The brand style balances utilitarian clarity with the precision of technical drafts:
+- **Distraction-Free Focus:** High signal-to-noise ratio. Complex technical schematics, mathematical formulas, and Korean Hangul typography take precedence over decorative flair.
+- **Warm Technical Paper Aesthetic:** Off-white, soft paper-slate backdrops eliminate blue-light glare and eye strain during prolonged night-time cram sessions.
+- **High-Voltage Accents:** Crisp cobalt blues paired with energetic amber sparks convey electrical authority, technical rigour, and high mental readiness.
+- **Ergonomic Thumb-Zone Architecture:** Primary action controls (submit, skip, mark wrong, advance) are anchored strictly in the lower 35% of the viewport to facilitate effortless one-handed thumb navigation.
+
+## Colors
+
+The color architecture is built for rapid feedback and cognitive clarity:
+
+- **Primary (`#1D4ED8`):** Deep electric cobalt blue. Conveys engineering rigor, precision, and focus. Used for primary CTA buttons, active state indicators, key formulas, and primary question numbers.
+- **Secondary (`#D97706`):** Warm electric amber. Signals high priority, tricky review questions, formula book alerts, and ambiguous/re-check statuses.
+- **Tertiary / Success (`#059669`):** Emerald green. Explicitly reserved for correct answers, verified mastery badges, and positive progression metrics.
+- **Status / Error (`#E11D48`):** Vivid rose red. Highlights incorrect submissions, mistake counter badges, and critical warning notes.
+- **Surface & Backgrounds:** 
+  - Base canvas: `#F8FAFC` (Slate 50 / warm drafting paper).
+  - Elevated surfaces: `#FFFFFF` (Pure white card surfaces).
+  - Subtle borders: `#E2E8F0` (Slate 200).
+- **Text & Contrast:** 
+  - Primary text: `#0F172A` (Slate 900) ensuring AAA contrast for complex Korean characters and subscript formulas.
+  - Secondary text: `#475569` (Slate 600) for metadata, exam years, and chapter classifications.
+
+## Typography
+
+Typography prioritizes Korean legibility, mathematical equations, and quick scanning while moving:
+
+- **Typefaces:** Plus Jakarta Sans is paired system-wide for both Latin and Hangul glyph fallbacks (serving Pretendard/system sans-serif), offering open counters, tall x-heights, and distinct character terminals. JetBrains Mono is utilized specifically for technical annotations, question indexing (e.g., `Q.08 [2023-1회]`), formula constants, and numerical score counters.
+- **Korean Reading Dynamics:** Korean technical terms require balanced leading. Body copy uses generous 1.6–1.65 line heights (`28px` on `17px` body) to prevent dense mathematical notations and Hanja-derived electrical terms from clustering visually.
+- **Hierarchy:**
+  - `headline-lg` & `headline-md`: Dedicated to chapter titles, score summaries, and modal sheets.
+  - `body-lg`: The primary reading scale for examination questions and formula derivations to preserve legibility at arm's length.
+  - `body-md`: Detailed answer rationales, calculation breakdowns, and technical explanations.
+  - `label-md` & `label-sm`: Micro-badges, examination session tags, and timer readouts.
+
+## Layout & Spacing
+
+The layout is built strictly for mobile portrait displays with a maximum viewport constraint of 440px:
+
+- **Grid & Margins:** A single-column vertical layout bounded by a constant `1rem` (16px) outer canvas margin. Content never bleeds to the edge except for full-bleed answer review sheets.
+- **Rhythm & Touch Geometry:** 
+  - Standard spacing rhythm follows a 4px/8px modular base. 
+  - Gap between multiple-choice items is pinned to `space-sm` (8px) to `space-md` (16px), preventing mis-taps.
+  - Primary button containers require a fixed minimum height between 52px and 56px to guarantee effortless thumb taps while walking.
+- **Bottom-Bar Clearance:** The bottom sticky zone is reserved for sticky actions and bottom tabs, with a mandatory safe padding of `calc(1rem + env(safe-area-inset-bottom))` to prevent interference with mobile home gestures.
+
+## Elevation & Depth
+
+Visual hierarchy uses crisp, clean tonal surfaces combined with delicate ambient shadows, mirroring structured paper flashcards:
+
+- **Surface Tiers:**
+  - **Level 0 (Canvas):** Warm paper base `#F8FAFC`.
+  - **Level 1 (Card/Container):** Pure `#FFFFFF` with a subtle outline of `1px solid #E2E8F0`.
+  - **Level 2 (Active/Selected Card):** Pure `#FFFFFF` bounded by a 2px active ring in cobalt `#1D4ED8` or error rose `#E11D48`.
+  - **Level 3 (Sticky Bottom Bar & Modals):** Pure `#FFFFFF` with an upward diffused ambient shadow (`0 -4px 16px -2px rgba(15, 23, 42, 0.06)`).
+- **Shadow Philosophy:** Hard, skeuomorphic drop-shadows are strictly avoided. Depth is conveyed through subtle borders and ultra-diffused, slate-tinted ambient occlusion (`rgba(15, 23, 42, 0.04)` to `rgba(15, 23, 42, 0.08)`), ensuring cards feel lightweight and responsive to quick thumb flicks.
+
+## Shapes
+
+The interface employs a unified `rounded-2xl` aesthetic for cards and tactile elements:
+
+- **Cards & Sheets:** Base radius is set to 1rem (16px / `rounded-2xl`), delivering friendly, soft physical card metaphors that clearly demarcate individual exam questions and answer reviews.
+- **Primary Buttons:** Unified at 0.75rem to 1rem (12px to 16px) corner radius to match card containers while maintaining solid, thumb-friendly hit targets.
+- **Status Badges & Chips:** Fully pill-shaped (`9999px`) for categorical distinction between structural cards and state tags.
+
+## Components
+
+### 1. Multiple-Choice Option Items
+- **Structure:** Full-width selectable card rows with minimum height of 56px. Left-aligned option index circle (`①`, `②`, `③`, `④`), centered Korean option copy, right-aligned feedback indicator.
+- **Default State:** White background, 1px border `#E2E8F0`, Slate 900 text.
+- **Selected State:** Light cobalt tint `#EFF6FF`, 2px border `#1D4ED8`, cobalt text.
+- **Correct Feedback State:** Light emerald tint `#ECFDF5`, 2px border `#059669`, emerald icon.
+- **Incorrect Feedback State:** Light rose tint `#FFF1F2`, 2px border `#E11D48`, rose icon.
+
+### 2. Action Buttons (Thumb Anchored)
+- **Primary Bottom CTA:** 56px height, width 100%, background `#1D4ED8`, text `#FFFFFF`, bold `17px`. Active state yields a subtle 0.98 scale transform for tactile confirmation.
+- **Secondary / Action Splits:** Dual-action layout in bottom thumb zone for "모름 (Skip/Unknown)" in neutral slate border (`#E2E8F0`) and "정답 확인 (Submit)" in solid cobalt.
+
+### 3. Question & Review Cards
+- **Container:** Pure white, 16px border-radius (`rounded-2xl`), 1px border `#E2E8F0`, 16px padding.
+- **Header Slot:** JetBrains Mono pill badge for session tag (e.g., `2023년 2회 기출`), problem number in cobalt headline, and bookmark/star toggle icon on top-right.
+- **Body Slot:** Question statement with explicit `lineHeight: 28px`.
+- **Explanation Accordion:** Collapsible drawer with light warm-slate background (`#F1F5F9`) detailing calculation step-by-step formulas in JetBrains Mono.
+
+### 4. Status Badges & Chips
+- **Correct Badge:** `#ECFDF5` background, `#059669` label, 4px vertical padding, 10px horizontal padding, pill-shaped.
+- **Incorrect Badge:** `#FFF1F2` background, `#E11D48` label, pill-shaped.
+- **Re-Study (오답보류) Badge:** `#FEF3C7` background, `#D97706` label, pill-shaped.
+
+### 5. Sticky Bottom Navigation Bar
+- **Architecture:** Fixed to bottom viewport, 64px height + safe-area inset. 2 primary tabs:
+  1. `문제 풀기` (Solving / Quiz icon)
+  2. `오답노트` (Incorrect Review / Notebook icon with red badge counter)
+- **Visuals:** Pure white surface, top border 1px `#E2E8F0`, active tab in `#1D4ED8` with a 3px active dot indicator, inactive tab in `#64748B`.
+
+### 6. Formula & Schematic Preview Box
+- Inset container inside cards with 8px radius, border `1px dashed #CBD5E1`, background `#F8FAFC`, presenting technical diagrams and LaTeX-formatted electrical formulas with horizontal scroll support.
